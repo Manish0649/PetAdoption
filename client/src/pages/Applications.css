@@ -1,0 +1,57 @@
+.applications-container {
+  padding-top: 100px; /* This moves content below the fixed navbar */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.applications-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.application-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.application-card:hover {
+  transform: translateY(-5px);
+}
+
+.application-card h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.application-details p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.application-details strong {
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .applications-container {
+    padding: 1rem;
+  }
+  
+  .applications-grid {
+    grid-template-columns: 1fr;
+  }
+}
