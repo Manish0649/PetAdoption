@@ -7,8 +7,8 @@ const { normalizeRow } = require("../utils/normalize");
 
 function determineRole(name = "", email = "") {
   if (
-    name.toLowerCase() === "nakul" ||
-    email.toLowerCase().includes("nakul")
+    name.toLowerCase() === "manish" ||
+    email.toLowerCase() === "manish@gmail.com"
   ) {
     return "admin";
   }
